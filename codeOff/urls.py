@@ -17,9 +17,11 @@ from django.conf.urls import url
 from django.contrib import admin
 from home.views import HomePage
 from dashboard.views import Dashboard
+from RegistrationForm.views import user_new
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^homepage/$', HomePage, name='home'),
     url(r'^dashboard/$', Dashboard, name='dash'),
+url(r'^register/$', user_new, name='dash'),
 ]

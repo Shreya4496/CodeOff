@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'EventPromotion',
     'home',
     'Preventions',
+    'RegistrationForm',
 ]
 
 MIDDLEWARE = [
