@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Dashboard-SealDeal.com</title>
+    <title>Dashboard</title>
     {% load static %}
     <!-- Bootstrap Core CSS -->
     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -305,47 +305,31 @@
             </div>
             <!-- /.row -->
             <div class="row">
-                <div class="col-lg-8">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Area Chart Example
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-
-                            <div id="chart-1">{{ output|safe }}</div>
-
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-
-                    <!-- /.panel -->
-                </div>
+           
                 <!-- /.col-lg-8 -->
 
-                <div class="col-lg-4">
+                <div class="col-lg-12">
                     <div class="panel panel-default panel-order">
                         <div class="panel-heading">
                             <i class="fa fa-users fa-fw"></i> Potential Leads
                         </div>
                         <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            {% for obj in u  %}
+                     <div class="panel-body">
+                            {% for obj in myList %}
                             <div class="row">
-                                 <div class="col-md-2"><img style="width: 50px" src="https://bootdey.com/img/Content/user_3.jpg" class="media-object img-thumbnail"></div>
-                                  <div class="col-md-7">
 
-                                      <div class="col-md-12">
-                                          <span style="text-align: center"><strong>{{ obj.username }}</strong></span> <br>
+
+                                      <div class="col-md-7">
+                                          <span style="text-align: center"><strong>{{ obj }}</strong></span> <br>
                                       </div>
-                                    <div class="col-md-12">
-                                        <p style="color: green">{{ obj.email }}</p>
-                                  </div>
-                                  </div>
+
+
                             </div>
 
                             {%endfor%}
                             <!-- /.list-group -->
+
+
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -361,12 +345,59 @@
             <div class="col-lg-8">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Area Chart Example
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Links to Healthy You
                         </div>
                         <!-- /.panel-heading -->
-                        <div class="panel-body">
+                            <div class="panel-body">
+                            {% for obj in recipes %}
+                            <div class="row">
 
-                            <div id="chart-2">{{ output1|safe }}</div>
+
+                                      <div class="col-md-7">
+                                          <span style="text-align: center"><iframe width="420" height="345" src={{ obj }}></iframe></span> <br>
+                                      </div>
+
+
+                            </div>
+
+                            {%endfor%}
+                            <!-- /.list-group -->
+
+
+                        </div>
+                        <div class="panel-body">
+                            {% for obj in recipes %}
+                            <div class="row">
+
+
+                                      <div class="col-md-7">
+                                          <span style="text-align: center"><iframe width="420" height="345" src={{ obj }}></iframe></span> <br>
+                                      </div>
+
+
+                            </div>
+
+                            {%endfor%}
+                            <!-- /.list-group -->
+
+
+                        </div>
+
+                             <div class="panel-body">
+                            {% for obj in posts %}
+                            <div class="row">
+
+
+                                      <div class="col-md-7">
+                                          <span style="text-align: center"><iframe width="420" height="345" src={{ obj }}></iframe></span> <br>
+                                      </div>
+
+
+                            </div>
+
+                            {%endfor%}
+                            <!-- /.list-group -->
+
 
                         </div>
                         <!-- /.panel-body -->

@@ -1,0 +1,6 @@
+<p> Please check the diseases for which you allow health monitoring:</p>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit" />
+</form>

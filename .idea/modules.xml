@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/codeOff.iml" filepath="$PROJECT_DIR$/.idea/codeOff.iml" />
+      <module fileurl="file://$USER_HOME$/Document/CodeOff/.idea/CodeOff.iml" filepath="$USER_HOME$/Document/CodeOff/.idea/CodeOff.iml" />
+      <module fileurl="file://$USER_HOME$/Document/CodeOff/CodeOff/.idea/codeOff.iml" filepath="$USER_HOME$/Document/CodeOff/CodeOff/.idea/codeOff.iml" />
     </modules>
   </component>
 </project>

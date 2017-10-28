@@ -7,4 +7,4 @@ from .models import User
 class UserForm(ModelForm):
     class Meta:
         model = User
-        fields = ['name', 'age', 'job']
+        fields = '__all__'
